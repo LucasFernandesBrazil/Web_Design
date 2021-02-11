@@ -1,0 +1,71 @@
+#menu {
+    font-size: 18px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;;
+    color: cadetblue;
+    background-color: #FEA993;
+    padding: 1.4em;
+    border-radius: 10px;
+    width: 913px;
+}
+
+#cabecario {
+    width: 900px;
+    padding-left: 25px;
+}
+
+#conteudo {
+    background-color: aliceblue;
+    border-radius: 10px;
+    padding: 2em;
+    width: 900px;
+}
+
+#rodape {
+    text-align: center;
+    padding: 1.2em;
+}
+
+.paragrafo {
+    padding-bottom: 0.5em;
+}
+
+.titulo {
+    color: #922B05;
+    font-size: 24px;
+    font-weight: 900;
+    padding-bottom: 0.6em;
+    padding-top: 00.6em;
+}
+
+a {
+    border-radius: 10px;
+    text-decoration: none;
+    padding: 0.6em;
+}
+
+a:link {
+    color:blanchedalmond;
+    background-color: #922B05;
+}
+
+a:visited {
+    color:blanchedalmond;
+    background-color: #922B05;
+}
+
+a:active {
+    color:blanchedalmond;
+    background-color: #c54111;
+}
+
+a:hover {
+    color: dimgray;
+    background-color: #FFD1DF;
+    padding-top: 0.8em;
+}
+
+
+body {
+    background-image: url(material/fundo.png);
+    font: 16px Arial, Helvetica, sans-serif;
+}
