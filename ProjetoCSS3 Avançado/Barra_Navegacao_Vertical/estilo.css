@@ -1,0 +1,42 @@
+/*ul 
+{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+
+}
+
+li 
+{
+    border: 1px solid red;
+    padding: 10px 20px; 
+    background: url(./Images/seta.png) no-repeat left center;
+}
+*/
+
+
+ul 
+{
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+ul a
+{
+    width: 200px;
+    height: 40px;
+    display: block;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 20px;
+    color: #000;
+    text-decoration: none;
+    text-indent: 40px;
+    line-height: 40px;
+    background: url(./Images/menu.png) no-repeat left center;
+}
+
+ul a:hover {
+    background-position: right;
+    color: #fff;
+}
