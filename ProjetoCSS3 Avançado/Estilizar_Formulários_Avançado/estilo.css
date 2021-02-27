@@ -54,5 +54,12 @@ input.submit {
 	background: -moz-linear-gradient(to bottom, #faa600, #f68a00);
 	background: -o-linear-gradient(to bottom, #faa600, #f68a00);
 	background: linear-gradient(to bottom, #faa600, #f68a00);
-
+	cursor: pointer;
+	transition: 0.3s;
 }
+
+input.submit:hover{
+	color: #f8d5a0;
+	border: none;
+}
+
