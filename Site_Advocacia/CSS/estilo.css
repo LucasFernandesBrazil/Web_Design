@@ -55,7 +55,7 @@ ul li
     transition: 0.6s;
 }
 
-body.home #menu_opcoes a#home 
+body.home #cabecario ul#navegacao a.home
 {
     color: rgba(255, 255, 255, 0.678);
     border-bottom: 2px solid rgba(255, 255, 255, 0.651);
