@@ -85,6 +85,11 @@ CAPA
     background: white;
     color: black;
 }
+
+.carousel-control-next, .carousel-control-prev
+{
+    width: 1%;
+}
 /*
 ESTRUTURA DE CONTEÚDOS
 */
@@ -144,8 +149,11 @@ footer
     position: relative;
 }
 
+
+
 footer h4
 {
+    padding-top: 3%;
     color: #919496;
     font-size: 0.8em;
     text-transform: uppercase;
