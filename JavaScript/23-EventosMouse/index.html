@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eventos</title>
+    
+    <script>
+        
+        function action() {
+            alert('O mouse saiu da área definida')
+        }
+
+        function action2() {
+            alert('Você clicou na área definida')
+        }
+
+        function action3() {
+            alert('Você passou o mouse em cima da área definida ')
+        }
+
+        function action4() {
+            alert('Você clicou duas vezes na área definida')
+        }
+        /*Eventos de mouse:
+        */
+    </script>
+</head>
+<body>
+    
+    <div onclick="action2()" onmouseout="action()" onmouseover="action3()" ondblclick="action4()" style="background: gray; height: 150px; width: 150px;">
+
+    </div>
+
+</body>
+</html>
