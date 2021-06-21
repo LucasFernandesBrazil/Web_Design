@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM</title>
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css" integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
+
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            color: rgb(29,29,29);
+        }
+
+        body h3 {
+            font-size: 3em;
+        }
+    </style>
+
+    <script>
+        function darkMod() {
+            var estado = document.getElementById('fundo')
+            estado.style.backgroundColor = 'rgb(29,29,29)';
+            estado.style.color = '#FFF';
+        }
+
+        function lightMod() {
+            var estado = document.getElementById('fundo')
+            estado.style.backgroundColor = '#FFF';
+            estado.style.color = 'rgb(29,29,29)';
+        }
+
+    </script>
+</head>
+<body id="fundo">
+
+    <button type="button" onclick="darkMod()">
+        <i class="fas fa-moon"></i>
+    </button>
+    <button type="button" onclick="lightMod()">
+        <i class="far fa-moon"></i>
+    </button>
+    
+   <h3>
+       Essa tela é um teste
+   </h3>
+
+   <p>
+       Esta sendo feito um estudo de DOM, onde dever ser realizado a manipulação de elementos HTML e CSS utilizando JavaScript
+   </p>
+
+   <hr>
+   <p>Autor: Lucas Fernandes <br> Data: 20/06/2021</p>
+</body>
+</html>
