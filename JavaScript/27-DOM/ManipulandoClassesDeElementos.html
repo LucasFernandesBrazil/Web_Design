@@ -17,19 +17,30 @@
         #fundo h3 {
             font-size: 3em;
         }
+
+        .teste {
+            background: rgb(29,29,29);
+            font-size: x-large;
+        }
     </style>
 
     <script>
         function darkMod() {
-            var estado = document.getElementById('fundo')
-            estado.style.backgroundColor = 'rgb(29,29,29)';
-            estado.style.color = '#FFF';
-        }
-
-        function lightMod() {
-            var estado = document.getElementById('fundo')
-            estado.style.backgroundColor = '#FFF';
-            estado.style.color = 'rgb(29,29,29)';
+            var propriedades = document.styleSheets[1].cssRules[0].style;
+            var color = propriedades.getPropertyValue('color');
+            var estado = document.getElementById('fundo');
+            var buttom = document.getElementById("buttom");
+            var mode = 0
+            if (mode === 0){
+                buttom.className = "far fa-moon";
+                estado.style.backgroundColor = 'rgb(29,29,29)';
+                estado.style.color = '#FFF';
+                mode = 1
+            }
+            if (mode === 1) {
+                estado.style.backgroundColor = '#FFF';
+                estado.style.color = 'rgb(29,29,29)';
+            }
         }
 
     </script>
@@ -37,10 +48,7 @@
 <body id="fundo">
 
     <button type="button" onclick="darkMod()">
-        <i class="fas fa-moon"></i>
-    </button>
-    <button type="button" onclick="lightMod()">
-        <i class="far fa-moon"></i>
+        <i id="buttom" class="fas fa-moon"></i>
     </button>
     
    <h3>
