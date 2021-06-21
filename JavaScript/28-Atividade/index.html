@@ -30,40 +30,21 @@
             margin: 1em 0;
             border-radius: 1em;
         }
-
-        .yellow{
-            background: greenyellow;
-        }
-
-        .red {
-            background: rgb(141, 20, 20);
-        }
-
-        .green {
-            background: green;
-        }
     </style>
 
     <script>
-        function yellow() {
-            var formulario = document.getElementById('form');
-            formulario.className = 'yellow';
+        function acionaCampo() {
+            document.getElementById('form').style.background='yellow'
         }
-
-        function none() {
-            var formulario = document.getElementById('form');
-            formulario.className = '';
-        }
-
-        var caracter = 0
+    
         function testeSenha() {
-            var formulario = document.getElementById('form');
-            caracter += 1
-            if (caracter < 3) {
-                formulario.className = 'red'
-            }
+            var valorCampo = document.getElementById('form').value
+            
+            if(valorCampo.length < 3) {
+                document.getElementById('form').style.background = "red"
+            } 
             else {
-                formulario.className = 'green'
+                document.getElementById('form').style.background = "green"
             }
         }
     </script>
@@ -72,7 +53,7 @@
 
     <div class="form-container">
         <h1>Digite uma senha</h1>
-        <input type="text" placeholder=" Mínimo de 3 dígitos" id="form" onfocus="yellow()" onblur="none()" onkeypress="testeSenha()">
+        <input type="text" placeholder=" Mínimo de 3 dígitos" id="form" onfocus="acionaCampo()" onblur="testeSenha()">
     </div>
 </body>
 </html>
